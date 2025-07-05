@@ -24,25 +24,25 @@ const Layout = () => {
   const navItems = user?.role === 'Admin' ? adminNavItems : patientNavItems;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-purple-200 to-pink-200">
       {/* Header */}
-      <header className="bg-white shadow-lg border-b">
+      <header className="bg-pink-50 shadow-lg border-b border-pink-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
-                <FileText className="h-8 w-8 text-blue-600" />
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  Dental Center
+                <FileText className="h-8 w-8 text-pink-600" />
+                <h1 className="text-2xl font-extrabold text-pink-700">
+                  ENTNT Dental Center
                 </h1>
               </div>
             </div>
             
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2 text-sm">
+              <div className="flex items-center space-x-2 text-sm text-pink-700">
                 <User className="h-4 w-4" />
                 <span className="font-medium">{user?.email}</span>
-                <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">
+                <span className="px-2 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium">
                   {user?.role}
                 </span>
               </div>
@@ -50,7 +50,7 @@ const Layout = () => {
                 onClick={logout}
                 variant="outline"
                 size="sm"
-                className="flex items-center space-x-2 hover:bg-red-50 hover:text-red-600 hover:border-red-200"
+                className="flex items-center space-x-2 hover:bg-pink-100 hover:text-pink-600 hover:border-pink-200"
               >
                 <LogOut className="h-4 w-4" />
                 <span>Logout</span>
