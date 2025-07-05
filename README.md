@@ -14,7 +14,7 @@ This is a frontend-only Dental Center Management Dashboard. It manages patients,
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/u0m5e0s9h/Dental-Center-Management.git
    cd Dental-dashboard
    ```
 2. Install dependencies:
